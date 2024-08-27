@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formulario</h2>
+        <form id="form-1">
+            <div class="form-block">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-block">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-block">
+                <label for="fecha">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha" name="fechanac" required>
+            </div>
+
+            <div class="form-block">
+                <label for="genero">Género:</label>
+                <label><input type="radio" id="genero" name="genero" value="hombre">Masculino</label>
+                <label><input type="radio" id="genero" name="genero" value="mujer">Femenino</label>
+                <label><input type="radio" id="genero" name="genero" value="otro">Otro</label>
+            </div>
+
+            <div class="form-block">
+                <label for="habilidades">Habilidades:</label>
+                <label><input type="checkbox" id="habilidades" name="habilidades" value="html">HTML</label>
+                <label><input type="checkbox" id="habilidades" name="habilidades" value="css">CSS</label>
+                <label><input type="checkbox" id="habilidades" name="habilidades" value="js">JavaScript</label>
+            </div>
+
+            <div class="form-block">
+                <label for="pais">Pais:</label>
+                <select name="pais" id="pais" required>
+                    <option value="">Seleccione su país</option>
+                    <option value="chile">Chile</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-block">
+                <label for="biografia">Biografía:</label>
+                <textarea name="biografia" id="biografia" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
